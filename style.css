@@ -1,0 +1,452 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+ background-color: white;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: #933a56;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 15px;
+  width: 95%;
+    font-size: 18px;
+  margin: 0 auto;
+
+}
+.button:hover{
+     border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+    background: #b6b2b2;
+    outline: none;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #fff8fc;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+    border-radius: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/*
+  *h1
+*/
+h1{
+  font-size: 22px;
+  color: #666A6C;
+}
+
+h6{
+    color: black;
+    font-weight: 520;
+}
+/*
+ * Header and .hero Styles
+*/
+
+header {
+  background: #FFF;
+}
+
+header .logo {
+  border-right: 1px solid #DCE0E0;
+}
+
+.hero img {
+  width: 100%;
+}
+/*
+ * intro
+*/
+.info{
+  background: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.info h1 {
+ margin-bottom: 5px;
+}
+
+
+
+.info .owner-details img {
+ border-radius: 50%;
+ margin-bottom: 6px;
+}
+.info h2.relationship, .info h2.name {
+ color: black;
+ margin-bottom: 3px;
+}
+
+.info h2.name {
+ font-weight: bold;
+    color: black;
+}
+.info .icons{
+  float: left;
+  width: 33.3%;
+}
+.info .booking h2{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+.info .icon img {
+ height: 30px;
+ margin-bottom: 3px;
+}
+
+.info p.location {
+ margin-bottom: 20px;
+}
+.info .pet-details h1{
+    color: black;
+    font-weight: 500;
+}
+.info .pet-details p{
+    color: black;
+}
+
+
+.info h2.price time {
+ font-size: 16px;
+}
+.info .profile{
+    background: #bec9d3;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-color: black;
+}
+.half{
+    padding: 1.3rem;
+}
+.half .about h3{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.half .about p{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    text-space: 2px;
+    text-align: left;
+
+}
+
+.half .care h3{
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+.half .care{
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 3rem;
+}
+.half .care .diet p{
+    font-size: 14px;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 15px;
+}
+.half .care .check p{
+    font-size: 14px;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 15px;
+}
+.half .gam{
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+}
+.half .games{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 2rem;
+}
+.half .photos h3{
+     margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+.half .photos img{
+    margin-top: 15px;
+     width: 100%;
+    display:flex;
+    justify-content: center;
+
+     margin-bottom: 2rem;
+}
+
+
+
+/*
+  *desktop version
+ */
+@media only screen and (min-width: 1060px) {
+.info{
+    background-color: #ffffff;
+}
+
+    .container {
+ width: 1040px;
+ margin: 0 auto;
+ }
+
+ .column {
+ float: left;
+ }
+
+ .button {
+ width: 275px;
+ margin: auto;
+ }
+
+ .info h1 {
+ margin-bottom: 11px;
+ }
+
+ .info h2 {
+ margin-bottom: 3px;
+ }
+
+ .info .profile {
+     width: 660px;
+     background-color: #cccbcb;
+     border-radius: 10px;
+     padding-top: 10px;
+
+ }
+
+ .info .booking {
+ width: 380px;
+ }
+
+ .info .owner-details {
+ width: 20%;
+ }
+
+ .info .pet-details {
+ width: 80%;
+ text-align: left;
+ }
+
+ .info .pet-details .icon {
+ width: inherit;
+ margin-right: 50px;
+ }
+
+ .info .pet-details .icon img {
+ display: block;
+ margin: 3px auto 3px;
+ }
+ .button:hover{
+     border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.button {
+  background: #933a56;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+.half{
+    text-align: center;
+
+}
+.half .about {
+ width: 660px;
+     border-radius: 10px;
+   margin-left: 240px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.half .about h3{
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.half .about p{
+  padding-top: 25px;
+   text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+
+}
+.half .contact-owner h3{
+    font-weight: bold;
+    font-size: 13px;
+    color: #933a56;
+    text-align: left;
+    padding-top: 36px;
+    width: 660px;
+    margin-left: 240px;
+}
+.half .care{
+    padding-top: 28px;
+    width: 660px;
+    float: left;
+    margin-left: 240px;
+    height: 130px;
+}
+.half .care h3{
+    float: left;
+    width: 46px;
+
+}
+.half .care .diet{
+    float: left;
+    width: 260px;
+    line-height: 22px;
+}
+.half .care .check{
+    float: right;
+    width: 225px;
+    line-height: 22px;
+}
+
+.half .games{
+    margin-top: 20px;
+   display: flex;
+    justify-content: space-between;
+    margin-left: 240px;
+    width: 50%;
+    align-items: center;
+
+}
+.half .photos{
+    margin-top: 100px;
+    width: 660px;
+    margin-left: 240px;
+    text-align: left;
+}
+
+.half .photos img {
+    margin-top: 20px;
+    display: inline;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
