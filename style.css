@@ -435,7 +435,10 @@ header .logo {
 
 .half .photos img {
     margin-top: 20px;
-    display: inline;
+    display: inline-flex;
+
+    width: 40%;
+    justify-content: space-between;
 
 }
 
